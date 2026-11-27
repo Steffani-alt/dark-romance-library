@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOIR LIBRARY | Biblioteca de Dark Romance</title>
+
+    <meta name="description" content="Entre em um universo de romances sombrios, segredos, obsessões e amores proibidos.">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- EFEITO DE FUNDO -->
+    <div class="background-overlay"></div>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            <span class="logo-symbol">✦</span>
+            <span>NOIR <strong>LIBRARY</strong></span>
+        </a>
+
+        <nav class="navbar">
+            <a href="#inicio" class="active">Início</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#colecao">Biblioteca</a>
+            <a href="#destaques">Destaques</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="header-icon" id="searchButton" aria-label="Pesquisar">
+                ⌕
+            </button>
+
+            <a href="#colecao" class="header-icon" aria-label="Meus favoritos">
+                ♡
+            </a>
+
+            <a href="#inicio" class="profile-button" aria-label="Perfil">
+                ♙
+            </a>
+
+        </div>
+
+        <button class="menu-mobile" id="menuMobile" aria-label="Abrir menu">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- BANNER PRINCIPAL -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    <span></span> UMA BIBLIOTECA PARA ALMAS SOMBRIAS
+                </span>
+
+                <h1>
+                    Algumas histórias<br>
+                    <span>nascem da escuridão.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Entre páginas proibidas, amores perigosos e segredos
+                    que jamais deveriam ser revelados. Descubra histórias
+                    que permanecem com você muito depois do último capítulo.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#colecao" class="button-primary">
+                        EXPLORAR BIBLIOTECA
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#categorias" class="button-secondary">
+                        DESCOBRIR GÊNEROS
+                    </a>
+
+                </div>
+
+                <div class="hero-quote">
+                    <span class="quote-line"></span>
+                    <p>
+                        "Nem toda história de amor foi feita para terminar bem."
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="hero-decoration">
+
+                <div class="hero-frame">
+
+                    <div class="frame-top">NOIR LIBRARY</div>
+
+                    <div class="hero-emblem">✦</div>
+
+                    <div class="hero-book-text">
+                        <span>CHAPTER I</span>
+                        <h2>THE<br>FORBIDDEN<br>DESIRE</h2>
+                        <p>LOVE · OBSESSION · DARKNESS</p>
+                    </div>
+
+                    <div class="frame-bottom">
+                        EST. MMXXVI
+                    </div>
+
+                </div>
+
+                <span class="decoration-star star-one">✧</span>
+                <span class="decoration-star star-two">✦</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- FRASE DECORATIVA -->
+        <section class="quote-banner">
+
+            <span>✦</span>
+
+            <p>
+                WELCOME TO THE DARK SIDE OF LOVE
+            </p>
+
+            <span>✦</span>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categories section-container" id="categorias">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-subtitle">EXPLORE SEUS DESEJOS</span>
+                    <h2>Universos <span>sombrio​s</span></h2>
+                </div>
+
+                <p>
+                    Cada gênero esconde uma história.<br>
+                    Escolha por onde deseja começar.
+                </p>
+
+            </div>
+
+            <div class="category-grid">
+
+                <button class="category-card" data-filter="mafia">
+                    <span class="category-number">01</span>
+                    <span class="category-icon">♛</span>
+                    <h3>Máfia Romance</h3>
+                    <p>Entre poder e perigo.</p>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-card" data-filter="proibido">
+                    <span class="category-number">02</span>
+                    <span class="category-icon">❦</span>
+                    <h3>Amor Proibido</h3>
+                    <p>Desejos que desafiam limites.</p>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-card" data-filter="enemies">
+                    <span class="category-number">03</span>
+                    <span class="category-icon">⚔</span>
+                    <h3>Enemies to Lovers</h3>
+                    <p>Ódio, tensão e paixão.</p>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-card" data-filter="obsessivo">
+                    <span class="category-number">04</span>
+                    <span class="category-icon">♱</span>
+                    <h3>Romance Obsessivo</h3>
+                    <p>Uma paixão fora de controle.</p>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-card" data-filter="academia">
+                    <span class="category-number">05</span>
+                    <span class="category-icon">✒</span>
+                    <h3>Dark Academia</h3>
+                    <p>Conhecimento e segredos.</p>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-card" data-filter="fantasia">
+                    <span class="category-number">06</span>
+                    <span class="category-icon">☾</span>
+                    <h3>Fantasia Sombria</h3>
+                    <p>Magia e mundos proibidos.</p>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LIVROS EM DESTAQUE -->
+        <section class="featured section-container" id="destaques">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-subtitle">SELEÇÃO ESPECIAL</span>
+                    <h2>Escolhas da <span>casa</span></h2>
+                </div>
+
+                <p>
+                    Histórias selecionadas para<br>
+                    leitores que não temem a escuridão.
+                </p>
+
+            </div>
+
+            <div class="featured-banner">
+
+                <div class="featured-cover">
+                    <span class="cover-ornament">✦</span>
+                    <span class="cover-small">A NOIR LIBRARY SELECTION</span>
+                    <h3>BEHIND<br>THE<br>SHADOWS</h3>
+                    <span class="cover-author">A MYSTERY OF LOVE</span>
+                    <span class="cover-ornament bottom">❦</span>
+                </div>
+
+                <div class="featured-info">
+
+                    <span class="featured-label">✦ LIVRO EM DESTAQUE</span>
+
+                    <h3>Behind the Shadows</h3>
+
+                    <span class="featured-author">Por Eleanor Voss</span>
+
+                    <p>
+                        Existem segredos que deveriam permanecer enterrados.
+                        Quando duas almas marcadas pelo passado se encontram,
+                        descobrir a verdade pode ser mais perigoso do que
+                        continuar vivendo uma mentira.
+                    </p>
+
+                    <div class="featured-tags">
+                        <span>Dark Romance</span>
+                        <span>Mistério</span>
+                        <span>Suspense</span>
+                    </div>
+
+                    <a href="livro.html?livro=behind-the-shadows" class="button-primary">
+    DESCOBRIR HISTÓRIA ↗
+</a>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BIBLIOTECA -->
+        <section class="library section-container" id="colecao">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-subtitle">O SEU PRÓXIMO VÍCIO LITERÁRIO</span>
+                    <h2>Biblioteca <span>particular</span></h2>
+                </div>
+
+                <p>
+                    Encontre sua próxima obsessão<br>
+                    entre nossas páginas.
+                </p>
+
+            </div>
+
+
+            <!-- PESQUISA -->
+            <div class="library-toolbar">
+
+                <div class="search-box">
+
+                    <span>⌕</span>
+
+                    <input
+                        type="text"
+                        id="bookSearch"
+                        placeholder="Pesquisar por título ou autor..."
+                    >
+
+                </div>
+
+                <select id="categoryFilter">
+                    <option value="todos">Todos os gêneros</option>
+                    <option value="mafia">Máfia Romance</option>
+                    <option value="proibido">Amor Proibido</option>
+                    <option value="enemies">Enemies to Lovers</option>
+                    <option value="obsessivo">Romance Obsessivo</option>
+                    <option value="academia">Dark Academia</option>
+                    <option value="fantasia">Fantasia Sombria</option>
+                </select>
+
+            </div>
+
+
+            <!-- LISTA DE LIVROS -->
+            <div class="book-grid" id="bookGrid">
+
+                <!-- LIVRO 1 -->
+                <article class="book-card"
+                    data-title="Promessa Sombria"
+                    data-author="A. Black"
+                    data-category="enemies">
+
+                    <div class="book-cover cover-one">
+
+                        <span class="book-category">ENEMIES TO LOVERS</span>
+
+                        <button class="favorite-button" aria-label="Favoritar" data-book="Promessa Sombria">
+                            ♡
+                        </button>
+
+                        <div class="book-cover-content">
+                            <span>UMA HISTÓRIA DE</span>
+                            <h3>PROMESSA<br>SOMBRIA</h3>
+                            <span>A. BLACK</span>
+                        </div>
+
+                        <span class="cover-decoration">✦</span>
+
+                    </div>
+
+                    <div class="book-information">
+
+                        <div class="book-rating">★★★★★ <span>4.9</span></div>
+
+                        <h3>Promessa Sombria</h3>
+
+                        <p>A. Black</p>
+
+                        <span class="book-description">
+                            O amor começou como um erro.
+                        </span>
+
+                        <a href="livro.html?livro=promessa-sombria" class="button-primary">
+    CONHCER LIVRO ↗
+</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIVRO 2 -->
+                <article class="book-card"
+                    data-title="Pecados Proibidos"
+                    data-author="Luna Noir"
+                    data-category="proibido">
+
+                    <div class="book-cover cover-two">
+
+                        <span class="book-category">AMOR PROIBIDO</span>
+
+                        <button class="favorite-button" aria-label="Favoritar" data-book="Pecados Proibidos">
+                            ♡
+                        </button>
+
+                        <div class="book-cover-content">
+                            <span>UM DESEJO SEM PERDÃO</span>
+                            <h3>PECADOS<br>PROIBIDOS</h3>
+                            <span>LUNA NOIR</span>
+                        </div>
+
+                        <span class="cover-decoration">❦</span>
+
+                    </div>
+
+                    <div class="book-information">
+
+                        <div class="book-rating">★★★★★ <span>4.8</span></div>
+
+                        <h3>Pecados Proibidos</h3>
+
+                        <p>Luna Noir</p>
+
+                        <span class="book-description">
+                            Existem desejos que custam tudo.
+                        </span>
+
+                        <a href="livro.html?livro=pecados-proibidos" class="button-primary">
+    CONHECER LIVRO ↗
+</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIVRO 3 -->
+                <article class="book-card"
+                    data-title="O Dono das Sombras"
+                    data-author="Raven Night"
+                    data-category="mafia">
+
+                    <div class="book-cover cover-three">
+
+                        <span class="book-category">MÁFIA ROMANCE</span>
+
+                        <button class="favorite-button" aria-label="Favoritar" data-book="O Dono das Sombras">
+                            ♡
+                        </button>
+
+                        <div class="book-cover-content">
+                            <span>O PODER TEM UM PREÇO</span>
+                            <h3>O DONO<br>DAS<br>SOMBRAS</h3>
+                            <span>RAVEN NIGHT</span>
+                        </div>
+
+                        <span class="cover-decoration">♛</span>
+
+                    </div>
+
+                    <div class="book-information">
+
+                        <div class="book-rating">★★★★★ <span>4.9</span></div>
+
+                        <h3>O Dono das Sombras</h3>
+
+                        <p>Raven Night</p>
+
+                        <span class="book-description">
+                            Ele controla tudo, menos o próprio coração.
+                        </span>
+
+                        <a href="livro.html?livro=o-dono-das-sombras" class="button-primary">
+    CONHECER LIVRO ↗
+
+</a>                 
+                    </div>
+
+                </article>
+
+
+                <!-- LIVRO 4 -->
+                <article class="book-card"
+                    data-title="Obsessão Fatal"
+                    data-author="Luna Noir"
+                    data-category="obsessivo">
+
+                    <div class="book-cover cover-four">
+
+                        <span class="book-category">ROMANCE OBSESSIVO</span>
+
+                        <button class="favorite-button" aria-label="Favoritar" data-book="Obsessão Fatal">
+                            ♡
+                        </button>
+
+                        <div class="book-cover-content">
+                            <span>UMA PAIXÃO PERIGOSA</span>
+                            <h3>OBSESSÃO<br>FATAL</h3>
+                            <span>LUNA NOIR</span>
+                        </div>
+
+                        <span class="cover-decoration">♱</span>
+
+                    </div>
+
+                    <div class="book-information">
+
+                        <div class="book-rating">★★★★★ <span>4.7</span></div>
+
+                        <h3>Obsessão Fatal</h3>
+
+                        <p>Luna Noir</p>
+
+                        <span class="book-description">
+                            Ele não ama... ele possui.
+                        </span>
+
+                        <a href="livro.html?livro=obessessao-fatal" class="button-primary">
+    CONHECER LIVRO ↗
+</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIVRO 5 -->
+                <article class="book-card"
+                    data-title="O Último Segredo"
+                    data-author="Eleanor Voss"
+                    data-category="academia">
+
+                    <div class="book-cover cover-five">
+
+                        <span class="book-category">DARK ACADEMIA</span>
+
+                        <button class="favorite-button" aria-label="Favoritar" data-book="O Último Segredo">
+                            ♡
+                        </button>
+
+                        <div class="book-cover-content">
+                            <span>O CONHECIMENTO É PERIGO</span>
+                            <h3>O ÚLTIMO<br>SEGREDO</h3>
+                            <span>ELEANOR VOSS</span>
+                        </div>
+
+                        <span class="cover-decoration">✒</span>
+
+                    </div>
+
+                    <div class="book-information">
+
+                        <div class="book-rating">★★★★★ <span>4.8</span></div>
+
+                        <h3>O Último Segredo</h3>
+
+                        <p>Eleanor Voss</p>
+
+                        <span class="book-description">
+                            Algumas verdades não deveriam ser descobertas.
+                        </span>
+
+                        <a href="livro.html?livro=o-ultimo-segredo" class="button-primary">
+    CONHECER LIVRO ↗
+</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIVRO 6 -->
+                <article class="book-card"
+                    data-title="A Prisioneira da Noite"
+                    data-author="A. Black"
+                    data-category="fantasia">
+
+                    <div class="book-cover cover-six">
+
+                        <span class="book-category">FANTASIA SOMBRIA</span>
+
+                        <button class="favorite-button" aria-label="Favoritar" data-book="A Prisioneira da Noite">
+                            ♡
+                        </button>
+
+                        <div class="book-cover-content">
+                            <span>UMA HISTÓRIA DE DESTINO</span>
+                            <h3>A PRISIONEIRA<br>DA NOITE</h3>
+                            <span>A. BLACK</span>
+                        </div>
+
+                        <span class="cover-decoration">☾</span>
+
+                    </div>
+
+                    <div class="book-information">
+
+                        <div class="book-rating">★★★★★ <span>4.9</span></div>
+
+                        <h3>A Prisioneira da Noite</h3>
+
+                        <p>A. Black</p>
+
+                        <span class="book-description">
+                            Nem toda escuridão deseja ser vencida.
+                        </span>
+
+                        <a href="livro.html?livro=prisioneira-da-noite" class="button-primary">
+    CONHECER LIVRO ↗
+</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="no-results" id="noResults">
+                Nenhum livro encontrado. Tente outra pesquisa.
+            </p>
+
+            <div class="library-footer">
+                <button class="button-secondary" id="clearFilters">
+                    LIMPAR FILTROS
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- FRASE FINAL -->
+        <section class="final-quote">
+
+            <span class="final-ornament">✦</span>
+
+            <p>THE DARKEST STORIES</p>
+
+            <h2>
+                Are the ones<br>
+                <span>we never forget.</span>
+            </h2>
+
+            <span class="final-ornament">❦</span>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <a href="#inicio" class="logo">
+                <span class="logo-symbol">✦</span>
+                <span>NOIR <strong>LIBRARY</strong></span>
+            </a>
+
+            <p>
+                Um refúgio para leitores que encontram beleza
+                até mesmo nas histórias mais sombrias.
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+                <h4>EXPLORAR</h4>
+                <a href="#inicio">Início</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#colecao">Biblioteca</a>
+            </div>
+
+            <div>
+                <h4>NOIR LIBRARY</h4>
+                <a href="#destaques">Destaques</a>
+                <a href="#inicio">Sobre nós</a>
+                <a href="mailto:contato@noirlibrary.com">Contato</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 NOIR LIBRARY. Todos os direitos reservados.</p>
+            <span>MADE OF INK & DARKNESS ✦</span>
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="javascript/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leitura | NOIR LIBRARY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-leitura">
+
+    <header class="leitura-header">
+        <a href="index.html" class="livro-logo">NOIR <span>LIBRARY</span></a>
+        <a id="voltar-livro" href="index.html" class="voltar-biblioteca">
+            ← Voltar ao livro
+        </a>
+    </header>
+
+    <main class="leitura-container">
+
+        <div class="leitura-identificacao">
+            <span id="leitura-nome-livro"></span>
+            <span id="leitura-numero-capitulo"></span>
+        </div>
+
+        <div class="progresso-area">
+            <div class="progresso-fundo">
+                <div id="barra-progresso" class="progresso-preenchido"></div>
+            </div>
+            <p id="texto-progresso">Seu progresso: 0%</p>
+        </div>
+
+        <article class="conteudo-leitura">
+            <span class="subtitulo-secao">NOIR LIBRARY APRESENTA</span>
+
+            <h1 id="titulo-capitulo-leitura">Carregando capítulo...</h1>
+
+            <div class="divisor-leitura">✦</div>
+
+            <div id="texto-capitulo-leitura" class="texto-leitura"></div>
+        </article>
+
+        <nav class="navegacao-capitulos">
+            <button id="capitulo-anterior" type="button">
+                ← Capítulo anterior
+            </button>
+
+            <button id="proximo-capitulo" type="button">
+                Próximo capítulo →
+            </button>
+        </nav>
+
+        <p id="mensagem-final" class="mensagem-final"></p>
+
+    </main>
+
+    <footer class="livro-footer">
+        <p>NOIR LIBRARY © 2026 — Algumas histórias nunca deveriam ser esquecidas.</p>
+    </footer>
+
+    <script src="javascript/leitura.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leitura | NOIR LIBRARY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-leitura">
+
+    <header class="leitura-header">
+        <a href="index.html" class="leitura-logo">NOIR LIBRARY</a>
+
+        <div class="leitura-header-centro" id="nome-livro-header">
+            Biblioteca de histórias
+        </div>
+
+        <a href="javascript:history.back()" class="sair-leitura">
+            ✕ <span>Fechar leitura</span>
+        </a>
+    </header>
+
+    <main class="leitor-container">
+
+        <div class="leitor-topo">
+            <span id="nome-livro-topo">NOIR LIBRARY</span>
+            <span id="progresso-texto">Capítulo 01</span>
+        </div>
+
+        <section class="livro-aberto">
+
+            <div class="pagina-fisica">
+
+                <div class="pagina-conteudo">
+
+                    <div class="ornamento-pagina">✦ ───── ✦</div>
+
+                    <span class="pagina-capitulo" id="numero-capitulo">
+                        CAPÍTULO I
+                    </span>
+
+                    <h1 id="titulo-capitulo">
+                        Carregando história...
+                    </h1>
+
+                    <div class="divisor-dourado">❦</div>
+
+                    <article id="texto-leitura" class="texto-leitura">
+                        <p>Preparando as páginas...</p>
+                    </article>
+
+                    <div class="ornamento-final">✦</div>
+
+                </div>
+
+                <div class="numero-pagina" id="numero-pagina">
+                    01
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="leitor-controles">
+
+            <button id="capitulo-anterior" class="controle-leitura">
+                ← Anterior
+            </button>
+
+            <div class="progresso-container">
+                <div class="progresso-barra">
+                    <div id="progresso-preenchido"></div>
+                </div>
+                <span id="progresso-percentual">0% concluído</span>
+            </div>
+
+            <button id="proximo-capitulo" class="controle-leitura">
+                Próximo →
+            </button>
+
+        </div>
+
+        <a href="#" id="voltar-livro" class="voltar-livro">
+            Voltar aos detalhes do livro
+        </a>
+
+    </main>
+
+    <script src="javascript/leitura.js"></script>
+
+</body>
+</html>

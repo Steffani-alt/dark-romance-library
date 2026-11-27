@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro | NOIR LIBRARY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-livro">
+
+    <header class="livro-header">
+        <a href="index.html" class="livro-logo">NOIR <span>LIBRARY</span></a>
+
+        <a href="index.html" class="voltar-biblioteca">
+            ← Voltar à biblioteca
+        </a>
+    </header>
+
+    <main>
+        <section class="detalhes-livro">
+
+            <div class="livro-capa-area">
+                <div id="livro-capa" class="livro-capa">
+                    <span class="capa-decoracao">✦</span>
+                    <h2 id="capa-titulo">NOIR LIBRARY</h2>
+                    <span class="capa-decoracao">✦</span>
+                </div>
+            </div>
+
+            <div class="livro-informacoes">
+                <span class="livro-etiqueta">EXCLUSIVO NOIR LIBRARY</span>
+
+                <h1 id="livro-titulo">Carregando livro...</h1>
+
+                <p class="livro-autor">
+                    Escrito por <span id="livro-autor"></span>
+                </p>
+
+                <div class="livro-metadados">
+                    <span id="livro-genero"></span>
+                    <span id="livro-classificacao"></span>
+                </div>
+
+                <p id="livro-frase" class="livro-frase"></p>
+
+                <div class="livro-botoes">
+                    <a href="#" id="botao-comecar-ler" class="botao-ler">
+    Começar a ler
+</a>
+                    <button id="botao-favorito" class="botao-favorito" type="button">
+                        ♡ Adicionar aos favoritos
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="livro-sinopse">
+            <span class="subtitulo-secao">POR TRÁS DAS PÁGINAS</span>
+            <h2>Sinopse</h2>
+            <p id="livro-sinopse"></p>
+        </section>
+
+        <section class="livro-detalhes-extras">
+            <div>
+                <span class="subtitulo-secao">OS ENVOLVIDOS</span>
+                <h2>Personagens</h2>
+                <p id="livro-personagens"></p>
+            </div>
+
+            <div>
+                <span class="subtitulo-secao">ANTES DE COMEÇAR</span>
+                <h2>Avisos de conteúdo</h2>
+                <p id="livro-avisos"></p>
+            </div>
+        </section>
+
+        <section class="livro-capitulos" id="capitulos">
+            <span class="subtitulo-secao">SUA PRÓXIMA LEITURA</span>
+            <h2>Capítulos</h2>
+            <p class="capitulos-introducao">
+                Cada página guarda um segredo. Descubra o que espera por você.
+            </p>
+
+            <div id="lista-capitulos" class="lista-capitulos"></div>
+        </section>
+
+    </main>
+
+    <footer class="livro-footer">
+        <p>NOIR LIBRARY © 2026 — Algumas histórias nunca deveriam ser esquecidas.</p>
+    </footer>
+
+    <script src="javascript/livro.js"></script>
+</body>
+</html>
